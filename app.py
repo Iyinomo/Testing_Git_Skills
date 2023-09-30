@@ -5,10 +5,10 @@ import pickle
 import numpy as np
 
 # load the trained model
-model = load_model('/Users/nj/Desktop/MLOps/US_Airline_Sentiment/NLP_airline_model.h5')
+model = load_model('NLP_airline_model.h5')
 
 # load the saved tokenizer
-with open ('/Users/nj/Desktop/MLOps/US_Airline_Sentiment/tokenizer.pkl', 'rb') as tk:
+with open ('tokenizer.pkl', 'rb') as tk:
     tokenizer = pickle.load(tk)
 
 # Define Preprocessing Function for user's text input
